@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Gusli
@@ -6,18 +7,21 @@
  * Time: 8:11 AM
  */
 class Avian {
-	protected $birdflu = 'Eww'
+	protected $birdflu = 'Eww';
 	protected $vaccination = 35.000;
-	protected $hopesAndDreams=0;
+	protected $hopesAndDreams = 0;
 
-	public function getBirdFlu(): str{}
-		return ($this->birdflu);
+	public function getHopesAndDreams(): int {
+		return ($this->hopesAndDreams);
+		}
 	public function getVaccination(): int {
 		return ($this->vaccination);
 	}
+//	public function getBirdFlu();
+////		if{ strlength $birdflu
 }
 
 $rex = new Avian();
-echo $rex->getBirdFlu() .PHP_EOL;
-echo $Felix->getBirdFlu()
--f
+echo $rex->getHopesAndDreams() . PHP_EOL;
+echo $rex->getVaccination() . PHP_EOL;
+
